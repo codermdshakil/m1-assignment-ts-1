@@ -1,11 +1,15 @@
 
 function processValue(value: string | number): number{
+
     if(typeof value === 'string'){
-        const valueLength = value.length;
+
+        const valueLength:number = value.length;
         console.log(`Output:`,valueLength);
+
         return valueLength
     }
     else{
+        
         console.log(`Output:`,value*2);
         return value*2;
     }

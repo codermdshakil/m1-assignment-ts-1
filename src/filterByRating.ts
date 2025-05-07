@@ -1,7 +1,7 @@
 
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
     // logic
-    const filteredItems = items.filter((item) => item.rating >= 4);
+    const filteredItems:{ title: string; rating: number }[] = items.filter((item:{ title: string; rating: number }) => item.rating >= 4);
     
     console.log(`Output: `, filteredItems);
     return filteredItems;

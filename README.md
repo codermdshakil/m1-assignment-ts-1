@@ -30,13 +30,12 @@ const user1 : User = {
 - Class implementation
 - Function type signature
 - Interface extension
-- React components (Props/State)
 
 ### ✅ Benefits of Using Interfaces
 
-- **Type safety:** Interface help to catch mistakes early by ensuring with your data matched with the interface expected data structure.
+- **Type safety:** Interface help us to catch mistakes early by ensuring with your data matched with the interface expected data structure.
 
-- **Readability & Maintainability:**  Interface helps  we to make our code easier to understand and maintain.
+- **Readability & Maintainability:**  Interface helps we to make our code easier to understand and maintain.
 
 - **Code Reusability:**  We can reuse interfaces across multiple files and functions.
 

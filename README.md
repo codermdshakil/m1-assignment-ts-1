@@ -90,15 +90,12 @@ type Greet = (name: string) => string;
 
 ### 🎯 Difference between Type vs Interface
 
-| Feature | `interface` | `type` |
-| --- | --- | --- |
-| Extends/Implements | ✅ `extends`, `implements` | ✅ via intersection (`&`) |
-| Used with classes | ✅ Yes | ❌ No |
-| Union/Intersection | ❌ No | ✅ Yes |
-| Primitive types | ❌ No | ✅ Yes |
-| Tuple support | ❌ No | ✅ Yes |
-| Declaration merging | ✅ Yes | ❌ No |
-
+- Extends and Implements: interface do it using `extends`, `implements` keyword but type `&`
+- Classes : interface are easy to use in class but type not
+- Union/Intersection : Best is type not interface
+- Primitive types: Best is type but not interface
+- Declaration merging : In interface when two interface name is same then it merged but not in type
+ 
 
 
 

@@ -100,3 +100,64 @@ type Greet = (name: string) => string;
 | Tuple support | ❌ No | ✅ Yes |
 | Declaration merging | ✅ Yes | ❌ No |
 
+
+
+
+
+# Blog - 2 : What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+
+
+
+
+
+## 🚀 What is `enum` in typeScript?
+
+Enums in TypeScript are a way to `define a set of named constants`, making code more `readable` and `manageable`. We use enum when working with `fixed values`, such as days of the week or status codes, directions.
+
+
+
+
+### 🧑‍💻 Example - 1: `Numeric values` using enum
+
+
+```tsx
+enum Direction {
+    Up,     // 0
+    Down,   // 1
+    Left,   // 2
+    Right   // 3
+}
+```
+
+
+### 🧑‍💻 Example - 1.5: Add `Custom numbers` values
+
+
+```tsx
+enum Status {
+    Success = 200,
+    NotFound = 404,
+    ServerError = 500
+}
+```
+
+
+### 🧑‍💻 Example - 2 :  `String values` using enum
+
+
+```tsx
+enum Status {
+    Success = 200,
+    NotFound = 404,
+    ServerError = 500
+}
+```
+
+### 🚀 Benefits of Using `enum`
+
+- **Readability**
+- **Maintainability**
+- **Auto-completion & type-checking**
+- **Access name from value and value from name.**
+
+

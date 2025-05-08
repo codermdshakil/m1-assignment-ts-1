@@ -161,3 +161,55 @@ enum Status {
 - **Access name from value and value from name.**
 
 
+
+
+# Blog - 3 : Explain the difference between `any`, `unknown`, and `never` types in TypeScript.
+
+
+## ✅ any
+
+When we use any type in any variable that means we `disable checking type` of that variable. we can assign `any type of data`in this variable. Simple using any type we `off` TypeScript Power. It’s not recommended to use scalable projects.
+
+```tsx
+
+let data : any = "Shakil Ahmed";
+data = 54;
+data = {name:'Shakil Ahmed', age:20};
+data = [1,4,6,7];
+
+```
+
+
+## ✅ unknown
+
+When we use unknown data type that means we can `hold anything` like any but before using it we `must checking` it type 
+
+```tsx
+let value: unknown = "Shakil Ahmed";
+
+if (typeof value === "string") {
+  console.log(value.toUpperCase()); // Safe
+}
+
+```
+
+
+## ✅ never
+
+When we use never that means values that` never occur`. we use never type when functions that `throw errors` or `never return` .
+
+```tsx
+function throwError(): never {
+  throw new Error("Something went wrong");
+}
+
+```
+
+
+
+### 🎯 any, unknown and never difference
+
+- **`any`**: we can assign and use anything no type checking at all.
+- **`unknown`**: we can assign anything, but you must check the type before using it.
+- **`never`**:  represents values that never occur, like functions that never return.
+

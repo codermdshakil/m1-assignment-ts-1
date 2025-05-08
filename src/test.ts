@@ -1,20 +1,17 @@
 
 
-enum Direction {
-    Up,     // 0
-    Down,   // 1
-    Left,   // 2
-    Right   // 3
-  }
-  
-  console.log(Direction.Up);    // Output: 0
-  console.log(Direction.Right); // Output: 3
-  
+let data : any = "Shakil Ahmed";
+data = 54;
+data = {name:'Shakil Ahmed', age:20};
+data = [1,4,6,7];
 
-  enum Status {
-    Success = 200,
-    NotFound = 404,
-    ServerError = 500
-  }
-  
-  console.log(Status.Success); // 200
+
+let value: unknown = "Shakil Ahmed";
+
+if (typeof value === "string") {
+  console.log(value.toUpperCase()); // Safe
+}
+
+function throwError(): never {
+  throw new Error("Something went wrong");
+}
